@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "pybricksdev run",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pybricksdev",
+            "cwd": "${workspaceFolder}/${relativeFileDirname}",
+            "args": ["run", "ble", "--name", "MyPybricksHub", "${file}"],
+        },
+		{
+			"name": "ev3dev run",
+			"type": "ev3devBrowser",
+			"request": "launch",
+			"program": "${workspaceFolder}/${relativeFile}",
+			"interactiveTerminal": false
+		}
+    ]
+}
